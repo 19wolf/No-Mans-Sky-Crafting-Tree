@@ -1,13 +1,17 @@
 digraph {
-	
 	// Setup
 	overlap=false;
-	layout=fdp;
+	layout=fdp; //could be sfdp, dot, neato
 	node [shape=box];
+	
+	//  Item Labels - make it pretty
 	//  item [label="Item\nValue"];
-	//	item_component -> item [label="number of input item"];
-	//	item -> dismantled_component [label="number of dismantled_compent",color="red"];
+	
+	//  Item Links - the actual tree part
+	//  item_component -> item [label="number of input item"];
+	//  item -> dismantled_component [label="number of dismantled_compent",color="red"];
 	//  charge_element -> item [label="number to get to 100% from 0??",color="green"];
+	
 	access_ramp [label="Access Ramp"];
 	acid -> atmosphere_harvester [label="2"];
 	acid [label="Acid"];
